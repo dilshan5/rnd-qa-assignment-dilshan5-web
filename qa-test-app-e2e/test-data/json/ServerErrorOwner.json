@@ -1,0 +1,14 @@
+{
+    "status": 400,
+    "error": "Bad Request",
+    "path": "/api/owners",
+    "timestamp": "2019-08-21T21:41:46.158+0000",
+    "message": "Request failed schema validation",
+    "schemaValidationErrors": [
+      {
+        "message": "[Path '/lastName'] Instance type (null) does not match any allowed primitive type (allowed: [\"string\"])",
+        "additionalProp1": {}
+      }
+    ],
+    "trace": "com.atlassian.oai.validator.springmvc.InvalidRequestException: ..."
+  }

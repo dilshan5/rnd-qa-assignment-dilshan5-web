@@ -1,0 +1,13 @@
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+dist/
+.idea/
+.DS_Store
+*/.DS_Store
+*.txt
+*.png
+.vscode
+package-lock.json
