@@ -30,7 +30,8 @@ export default defineConfig({
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
   },
-
+  expect: {timeout: 4000},
+  
   /* Configure projects for major browsers */
   projects: [
     {
