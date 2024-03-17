@@ -1,7 +1,5 @@
 import { expect } from '@playwright/test';
 import { test } from '../../fixtures/test';
-import { lstat } from 'fs';
-import { config } from 'process';
 
 test.describe('Functional verification for Owners', () => {
   test.beforeEach(async ({ page }) => {
