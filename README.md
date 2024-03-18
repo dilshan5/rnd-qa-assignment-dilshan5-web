@@ -17,6 +17,7 @@ Please find the following Tests:
 4. Once the installion is complete - ` npx playwright test`
 
 Precondition: You to need to make sure Petclinic service is UP and accessible via http://localhost:8080/
+[Once docker is installed, make sure it's up and running. Then run `docker-compose up`]
 
 ## How to generate allure test report
 1. Generate allure report - `npx allure generate ./allure-results --clean`
