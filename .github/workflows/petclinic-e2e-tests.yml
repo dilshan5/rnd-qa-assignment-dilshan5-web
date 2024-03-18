@@ -11,8 +11,9 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
-    - name: Set the Petclinic Service UP
+    - name: Build docker service
       run: docker build . --file docker-compose.yml -t petclinicimage
+    - name: Set the Petclinic Service UP
       run: docker-compose up
     - name: Install dependencies
       run: npm ci
