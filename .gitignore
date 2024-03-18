@@ -1,6 +1,9 @@
 node_modules/
-/test-results/
-/playwright-report/
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+test-output/
 /playwright/.cache/
 target
 .idea

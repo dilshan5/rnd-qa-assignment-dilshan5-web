@@ -2,7 +2,7 @@ import { expect } from '@playwright/test';
 import { test } from '../../fixtures/test';
 import { PetType } from 'qa-test-app-e2e/page-objects/petdetails-page';
 
-test.describe('Functional verification for Owners', () => {
+test.describe('Functional verification for Pets', () => {
     test.beforeEach(async ({ page, topMenuPage }) => {
         await page.goto('');
         await page.waitForLoadState('networkidle');
