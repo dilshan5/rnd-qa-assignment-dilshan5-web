@@ -11,7 +11,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
-    - name: Set up environment - Petclinic
+    - name: Set up environment in the background - Petclinic
       run: docker compose -f docker-compose.yml up -d
     - name: Wait for docker to finish building
       run: sleep 30  
@@ -26,4 +26,4 @@ jobs:
       with:
         name: playwright-report
         path: playwright-report/
-        retention-days: 30
+        retention-days: 7
