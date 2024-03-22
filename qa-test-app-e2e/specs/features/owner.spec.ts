@@ -25,7 +25,7 @@ test.describe('Functional verification for Owners', () => {
     });
   });
 
-  test('Verify Search functionality with 3 keywords', async ({ topMenuPage, ownersListPage }) => {
+  test('User can search the Owner with 3 keywords', async ({ topMenuPage, ownersListPage }) => {
     await test.step("Select All link in the Owner tab", async () => {
       await topMenuPage.selectOwnerMenu('All');
     });
@@ -45,7 +45,7 @@ test.describe('Functional verification for Owners', () => {
   });
 
 
-  test('Verify Search functionality with 2 keywords', async ({ topMenuPage, ownersListPage }) => {
+  test('User can search the Owner with 2 keywords', async ({ topMenuPage, ownersListPage }) => {
     await test.step("Select All link in the Owner tab", async () => {
       await topMenuPage.selectOwnerMenu('All');
     });
@@ -65,7 +65,7 @@ test.describe('Functional verification for Owners', () => {
     });
   });
 
-  test('Verify the server error message for owner list page', async ({ page, topMenuPage, networkInterceptor }) => {
+  test('Verify the server error (HTTP 500) message for owner list page', async ({ page, topMenuPage, networkInterceptor }) => {
     /**
      * Intercept the booking response for validate conflicts error message
      */
@@ -84,7 +84,7 @@ test.describe('Functional verification for Owners', () => {
     });
   });
 
-  test('Verify Owner Details Page', async ({ topMenuPage, ownerDetailsPage, ownersListPage }) => {
+  test('Verification on the Owner Details Page', async ({ topMenuPage, ownerDetailsPage, ownersListPage }) => {
     const ownerName = 'Peter McTavish'
     await test.step("Select All link in the Owner tab", async () => {
       await topMenuPage.selectOwnerMenu('All');
@@ -98,7 +98,7 @@ test.describe('Functional verification for Owners', () => {
     });
   });
 
-  test('Edit Owner "Peter McTavish" ', async ({ topMenuPage, ownerDetailsPage, ownersListPage, page }) => {
+  test('Edit Owner "Peter McTavish" and the updated details are shown on the page', async ({ topMenuPage, ownerDetailsPage, ownersListPage, page }) => {
     const ownerName = 'Peter McTavish'
     await test.step("Select All link in the Owner tab", async () => {
       await topMenuPage.selectOwnerMenu('All');
@@ -119,7 +119,7 @@ test.describe('Functional verification for Owners', () => {
     });
   });
 
-  test('Add a new Owner', async ({ topMenuPage, ownerDetailsPage, ownersListPage, page }) => {
+  test('Newly added Owner should display in the table', async ({ topMenuPage, ownerDetailsPage, ownersListPage, page }) => {
     const ownerName = 'Peter McTavish'
     await test.step("Select All link in the Owner tab", async () => {
       await topMenuPage.selectOwnerMenu('Register');

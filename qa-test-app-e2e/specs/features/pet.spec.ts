@@ -11,7 +11,7 @@ test.describe('Functional verification for Pets', () => {
         });
     });
 
-    test('Add a pet to Owner "Peter McTavish" ', async ({ ownerDetailsPage, ownersListPage, petDetailsPage, page }) => {
+    test('Add a pet to Owner "Peter McTavish" and view on the page', async ({ ownerDetailsPage, ownersListPage, petDetailsPage, page }) => {
         await test.step("Select the Owner `Peter McTavish` ", async () => {
             await ownersListPage.rowsLocator.getByRole('link').nth(4).click();
         });
