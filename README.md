@@ -26,3 +26,7 @@ Precondition: You to need to make sure Petclinic service is UP and accessible vi
 ## CI/CD Integration - Gitgub Actions
 Naviagate to URL https://github.com/dilshan5/rnd-qa-assignment-dilshan5-web/actions/workflows/petclinic-e2e-tests.yml
 
+### View Allure report
+1. Download the file and open the file via commad line
+2. Execute `npx allure open`
+
